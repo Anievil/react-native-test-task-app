@@ -1,0 +1,10 @@
+.openapi-generator-ignore
+apis/DefaultApi.ts
+apis/index.ts
+index.ts
+models/ActivitiesGet200ResponseInner.ts
+models/FavoritesPost200Response.ts
+models/FavoritesPost400Response.ts
+models/FavoritesPostRequest.ts
+models/index.ts
+runtime.ts

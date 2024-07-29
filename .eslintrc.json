@@ -5,6 +5,7 @@
     "prettier",
     "plugin:react/jsx-runtime"
   ],
+  "ignorePatterns": ["/generated/**", "/nativewind-env.d.ts"],
   "rules": {
     "import/order": "off",
     "curly": "error",
