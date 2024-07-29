@@ -1,4 +1,4 @@
-import { FC, useCallback, useEffect } from 'react'
+import { FC, useCallback } from 'react'
 import { FlatList, ListRenderItem, RefreshControl, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { ActivityItem, StyledText } from '../components'
@@ -8,7 +8,7 @@ import { ActivitiesGet200ResponseInner } from '../../generated'
 import { activityDataTypes } from '../api/apiTypes'
 
 const HomeScreen: FC<RootStackScreenProps<'Home'>> = ({ navigation }) => {
-  const { data, isError, error, refetch, isLoading } = useFetchData()
+  const { data, refetch, isLoading } = useFetchData()
 
   const onActivityItemPress = useCallback((activityInfo: activityDataTypes) => {
     navigation.navigate('ActivityScreen', activityInfo)
